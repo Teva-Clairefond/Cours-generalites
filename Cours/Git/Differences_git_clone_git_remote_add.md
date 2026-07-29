@@ -77,3 +77,8 @@ git remote add origin https://github.com/user/repo.git
 
 
 If you want, I can show a real workflow (e.g., pushing your first project to GitHub vs contributing to an existing repo).
+
+
+## Pour remplacer une origine : 
+
+**git remote set-url origin**

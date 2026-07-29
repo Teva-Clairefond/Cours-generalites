@@ -31,3 +31,26 @@ git push -u origin main     # Cette commande envoie (push) votre branche locale 
                             # L'option -u (ou --set-upstream) établit un lien de suivi entre votre branche locale et la branche distante, 
                             # ce qui simplifie les futurs git push et git pull (vous n'aurez plus besoin de spécifier "origin main").
 
+
+git fetch origin {nom de la branche}    # Pull une branche du repo distant origin
+
+git pull origin {nom de la branche}     # Pull une branche du repo distant origin vers la branche actuelle (fait un merge)
+
+git restore --staged {nom du fichier}   # Enlève un fichier de la zone d'attente Git
+
+
+Situation :
+
+On change de branche et il y a des fichiers qui persistent de la branche précédente.
+
+git clean -fd {nom du fichier/dossier}
+git clean -fdX {nom du fichier/dossier} inclu aussi les fichiers ignorés (caches etc.)
+
+
+Renommer la branche actuelle dans git :
+
+git branch -m {nouveau nom}
+
+git rm fichier  # Supprime le fichier du disque et stage la suppression
+
+git add -u      # Stage les suppressions/modifications des fichiers déjà suivis
